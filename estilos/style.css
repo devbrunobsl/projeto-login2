@@ -3,7 +3,7 @@
 /* 
     Paleta de cores
     salmão: #FAB280
-    Marrom: ##914409
+    Marrom: #914409
 */
 
 * {
@@ -12,3 +12,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html, body {
+    background-color: #914409;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    overflow: hidden;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transform: translate(-50%, -50%);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #914409 url(../imagens/hall.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario > p {
+    font-size: 0.8em;
+}
+div#formulario > form {
+    font-size: 0.9em;
+}
+
